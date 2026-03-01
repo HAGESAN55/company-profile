@@ -1,0 +1,135 @@
+body { scroll-behavior: smooth; }
+
+.hero {
+    background: linear-gradient(to right, #0d6efd, #0b5ed7);
+    color: white;
+    padding: 120px 0;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0b5ed7 !important;
+}
+
+/* ADMIN LAYOUT */
+
+.admin-wrapper{
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width: 220px;
+    background: #0d6efd;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar .nav-link{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sidebar .nav-link:hover{
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+/* MAIN */
+
+.main-content{
+    flex: 1;
+    background: #f8f9fa;
+}
+
+/* TOPBAR */
+
+.topbar{
+    background: white;
+    padding: 15px 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* WRAPPER */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    background: #0d6efd;
+    color: white;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    background: rgba(255,255,255,0.2);
+}
+
+/* MAIN */
+.main-content {
+    margin-left: 230px;
+    width: 100%;
+}
+
+/* TOPBAR */
+.topbar {
+    background: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+
+/* CONTENT */
+.content {
+    padding: 25px;
+}
+
+/* CARD */
+.stat-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.stat-card h6 {
+    color: #777;
+}
+
+.stat-card h2 {
+    font-weight: bold;
+    margin: 0;
+}
