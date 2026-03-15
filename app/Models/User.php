@@ -20,6 +20,9 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'phone',
+        'address',
+        'category_id',
         'password',
     ];
 
@@ -44,5 +47,14 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+    public function category()
+    {
+        return $this->belongsTo(UserCategory::class, 'category_id');
+    }
+
+    public function transaction  ()
+    {
+        return $this->hasMany(Transaction::class);
     }
 }

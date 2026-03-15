@@ -18,13 +18,13 @@
 
 
     {{-- Navbar --}}
-    @include('components.navbar')
+    {{-- @include('components.navbar') --}}
 
     {{-- Content --}}
     @yield('content')
 
     {{-- Footer --}}
-    @include('components.footer')
+    {{-- @include('components.footer') --}}
 
 <!-- Custom JS -->
 <script src="{{ asset('assets/js/auth.js') }}"></script>
